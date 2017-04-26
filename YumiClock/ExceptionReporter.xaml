@@ -1,0 +1,21 @@
+﻿<Window x:Class="YumiClock.ExceptionReporter"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:YumiClock"
+        mc:Ignorable="d"
+        Title="YumiClock Exception" Height="327" Width="492" ResizeMode="NoResize" WindowStyle="ToolWindow">
+    <Grid Loaded="OnLoaded">
+        <TextBlock HorizontalAlignment="Left" Height="76" Margin="10,10,0,0" TextWrapping="Wrap"
+                   VerticalAlignment="Top" Width="464">
+        <Run FontWeight="Bold" FontSize="18" Text="The Application has crashed! No pie for you!" />
+        <LineBreak />
+        <LineBreak />
+        <Run
+                Text="An error occurred which has caused this application to operate incorrectly. Details are provided below. " />
+        </TextBlock>
+        <TextBox Name="ExceptionBox" HorizontalAlignment="Left" Height="195" Margin="10,91,0,0" TextWrapping="Wrap"
+                 VerticalAlignment="Top" Width="464" IsReadOnly="true" />
+    </Grid>
+</Window>
